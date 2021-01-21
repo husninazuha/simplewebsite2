@@ -1,0 +1,37 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href="~/css/Style.css" rel="stylesheet" />
+<script src="./lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#banner").load("banner-about.html");
+        $("#about-1").load("aboutUs.html");
+        $("#about-2").load("strength.html");
+        $("#about-3").load("target.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+<body>
+
+    <div id="banner"></div>
+
+    <div id="about-1"></div>
+
+    <div id="about-2"></div>
+
+    <div id="about-3"></div>
+
+    <div id="footer"></div>
+</body>
+</html>

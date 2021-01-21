@@ -1,0 +1,36 @@
+﻿@page
+@model ContactModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href="~/css/Style.css" rel="stylesheet" />
+<script src="./lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#contact-2").load("contactUs.html");
+        $("#contact-1").load("form.html");
+        $("#footer").load("footer.html");
+        $("#banner").load("banner-contact.html");
+    });
+</script>
+<body>
+
+    <!-- Contact -->
+    <div id="banner"></div>
+
+    <div id="contact-2"></div>
+
+    <div id="contact-1"></div>
+
+
+
+
+</body>
+</html>

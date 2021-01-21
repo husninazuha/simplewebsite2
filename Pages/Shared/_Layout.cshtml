@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Template_2_Green</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="~/css/Style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow w3-green">
+            <div class="container" id="topheader">
+                <img src="~/Images/menubar-carrot-logo.png" width="136" height="46" />
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="myDIV">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="target nav-link text-white active" asp-area="" asp-page="/Index" style="width: 70px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="target nav-link text-white " asp-area="" asp-page="/About" style="width: 70px;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="target nav-link text-white " asp-area="" asp-page="/Products" style="width: 100px;">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="target nav-link text-white " asp-area="" asp-page="/Contact" style="width: 80px;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div @*class="container"*@>
+        <main role="main" >
+            @RenderBody()
+        </main>
+    </div>
+
+    <div id="foot">
+
+        <img src='Images\footer-carrot-logo-green.png' width="200" height="60">
+        <div class="w3-row" id="subfooter">
+            <div class="w3-third  ">
+
+                <svg class="w3-left " xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 71.000000 72.000000" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="green" stroke="none">
+                        <path d="M233 692 c-67 -27 -129 -76 -167 -134 -97 -146 -79 -327 43 -449 172 -172 454 -122 563 99 30 60 33 75 33 153 -1 77 -5 94 -33 152 -40 80 -112 148 -188 176 -69 26 -190 28 -251 3z m263 -45 c217 -110 238 -411 39 -553 -57 -40 -129 -58 -209 -52 -216 18 -351 255 -258 453 39 82 115 148 202 176 14 5 59 7 100 5 57 -2 87 -9 126 -29z" />
+                        <path d="M213 494 c-32 -32 -27 -69 23 -141 83 -121 211 -186 264 -133 26 26 25 42 -2 67 -36 33 -64 43 -97 37 -25 -5 -36 -1 -61 25 -27 26 -30 36 -25 62 5 23 1 39 -19 70 -31 46 -47 48 -83 13z" />
+                    </g>
+                </svg>
+                <div class="w3-bar-item " id="detail">
+                    <span id="text3" contenteditable="true">+604-123 4567</span><br>
+                </div>
+
+                <p style="margin-top:12px;">
+                    <svg class="w3-left" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 71.000000 72.000000" preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,72.000000) scale(0.100000,-0.100000)" fill="green" stroke="none">
+                            <path d="M229 687 c-114 -48 -186 -132 -215 -250 -15 -59 -15 -78 -5 -135 23 -124 96 -218 209 -270 83 -38 194 -37 277 1 153 71 238 234 205 393 -23 112 -82 191 -182 244 -55 30 -74 34 -148 37 -72 3 -94 0 -141 -20z m265 -41 c128 -63 200 -205 174 -346 -13 -70 -39 -121 -88 -170 -68 -68 -111 -85 -220 -85 -111 0 -162 19 -229 86 -57 58 -85 120 -89 204 -5 87 8 139 51 201 91 135 257 180 401 110z" />
+                            <path d="M207 574 c-4 -4 -7 -27 -7 -51 0 -40 -2 -43 -28 -43 -46 0 -52 -15 -52 -130 0 -115 6 -130 51 -130 25 0 28 -4 31 -38 l3 -37 150 0 150 0 3 38 c3 31 7 37 27 37 54 0 55 3 55 130 0 127 -1 130 -55 130 -21 0 -24 5 -27 48 l-3 47 -146 3 c-80 1 -148 -1 -152 -4z m273 -59 l0 -35 -125 0 -125 0 0 35 0 35 125 0 125 0 0 -35z m85 -165 l0 -95 -27 -3 c-26 -3 -28 0 -28 30 0 54 -10 58 -155 58 -145 0 -155 -4 -155 -58 0 -30 -2 -33 -27 -30 -28 3 -28 4 -31 87 -2 46 -1 90 2 98 5 11 46 13 213 11 l208 -3 0 -95z m-85 -110 l0 -70 -125 0 -125 0 0 70 0 70 125 0 125 0 0 -70z" />
+                            <path d="M206 411 c-4 -6 -5 -15 -2 -20 8 -12 69 -8 73 6 6 16 -16 26 -31 14 -9 -7 -16 -7 -23 0 -8 8 -13 8 -17 0z" />
+                            <path d="M283 268 c2 -9 26 -13 72 -13 46 0 70 4 73 13 3 9 -16 12 -73 12 -57 0 -76 -3 -72 -12z" />
+                            <path d="M283 208 c2 -9 26 -13 72 -13 46 0 70 4 73 13 3 9 -16 12 -73 12 -57 0 -76 -3 -72 -12z" />
+                        </g>
+                    </svg>
+
+                    <div class="w3-bar-item" id="detail">
+                        <span id="text3" contenteditable="true">+604-123 4567</span><br>
+
+                    </div>
+
+                </p>
+
+                <div class="w3-hide-small">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 73.000000 73.000000" preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,73.000000) scale(0.100000,-0.100000)" fill="#000" stroke="none">
+                            <path d="M279 717 c-100 -29 -174 -90 -227 -190 -24 -47 -27 -62 -27 -152 0 -83 4 -107 21 -139 l21 -40 -29 -88 c-17 -49 -28 -92 -25 -95 3 -3 45 8 94 24 87 29 88 29 133 12 110 -43 228 -30 328 36 176 117 203 372 57 534 -78 86 -233 130 -346 98z m178 -62 c60 -18 132 -79 171 -143 24 -42 27 -57 27 -137 0 -80 -3 -95 -27 -135 -61 -103 -149 -155 -263 -154 -52 0 -81 6 -113 23 -42 22 -45 22 -93 6 -28 -10 -52 -15 -55 -13 -2 3 3 26 12 51 15 46 15 48 -10 99 -61 122 -17 289 97 364 81 53 163 66 254 39z" />
+                            <path d="M221 531 c-34 -34 -36 -76 -6 -136 50 -103 169 -195 251 -195 40 0 84 34 84 66 0 18 -10 29 -41 45 l-41 20 -22 -20 c-29 -27 -42 -26 -87 4 -46 33 -79 89 -61 107 16 16 15 51 -2 93 -17 40 -45 46 -75 16z" />
+                        </g>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 74.000000 73.000000" preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,73.000000) scale(0.100000,-0.100000)" fill="#000" stroke="none">
+                            <path d="M22 718 c-17 -17 -17 -689 0 -706 8 -8 65 -12 190 -12 l178 0 0 140 0 140 -45 0 -45 0 0 55 0 55 44 0 43 0 6 72 c10 113 61 161 167 156 l55 -3 3 -47 3 -48 -36 0 c-62 0 -75 -13 -75 -75 l0 -55 50 0 c49 0 50 -1 50 -29 0 -16 -4 -41 -10 -55 -8 -22 -16 -26 -50 -26 l-40 0 0 -140 0 -140 91 0 c142 0 129 -36 129 363 0 254 -3 346 -12 355 -17 17 -679 17 -696 0z" />
+                        </g>
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 73.000000 73.000000" preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,73.000000) scale(0.100000,-0.100000)" fill="#000" stroke="none">
+                            <path d="M149 716 c-56 -20 -97 -54 -122 -99 -20 -38 -22 -58 -25 -228 -4 -226 2 -256 67 -320 62 -63 111 -73 330 -67 179 4 217 15 267 70 55 60 59 79 59 288 0 135 -4 206 -13 232 -17 47 -89 113 -138 127 -56 16 -380 13 -425 -3z m453 -71 c15 -11 37 -39 48 -62 20 -39 21 -56 18 -232 -3 -207 -6 -216 -72 -265 -25 -19 -44 -21 -222 -24 -183 -3 -196 -2 -232 18 -74 43 -77 50 -80 278 -3 191 -2 205 18 237 11 18 35 43 53 54 30 20 44 21 237 19 187 -3 207 -5 232 -23z" />
+                            <path d="M512 608 c-35 -35 14 -102 57 -79 45 25 33 91 -17 91 -16 0 -33 -5 -40 -12z" />
+                            <path d="M285 536 c-151 -67 -136 -294 22 -347 148 -48 288 104 228 248 -20 48 -41 71 -87 94 -43 22 -119 24 -163 5z m129 -50 c68 -28 97 -117 61 -186 -32 -62 -131 -80 -191 -35 -78 60 -62 181 30 221 40 17 59 17 100 0z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="w3-third ">
+                <svg class="w3-left" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 71.000000 71.000000" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,71.000000) scale(0.100000,-0.100000)" fill="green" stroke="none">
+                        <path d="M251 696 c-67 -22 -145 -81 -185 -139 -102 -151 -80 -337 56 -462 174 -162 449 -105 555 115 23 47 27 68 28 145 0 77 -4 98 -27 147 -34 73 -104 143 -176 176 -69 31 -183 40 -251 18z m246 -57 c195 -94 238 -354 83 -509 -23 -23 -67 -53 -97 -67 -49 -22 -65 -25 -141 -21 -100 5 -150 26 -211 87 -65 65 -86 121 -86 231 0 73 4 103 19 130 67 127 189 196 321 184 28 -3 78 -18 112 -35z" />
+                        <path d="M130 501 c-13 -26 -13 -266 0 -292 10 -18 23 -19 230 -19 207 0 220 1 230 19 15 28 13 284 -2 299 -9 9 -74 12 -230 12 -205 0 -218 -1 -228 -19z m340 -78 c-40 -38 -82 -74 -92 -82 -22 -15 -19 -17 -135 91 l-61 58 180 0 180 0 -72 -67z m-228 -40 l28 -29 -55 -54 -55 -54 0 103 0 102 28 -19 c15 -11 39 -33 54 -49z m318 -35 l0 -102 -56 54 -55 55 52 48 c29 26 54 47 56 47 2 0 3 -46 3 -102z m-194 -48 c17 0 37 7 44 15 10 12 20 8 66 -33 30 -26 54 -50 54 -54 0 -5 -76 -8 -170 -8 -93 0 -170 2 -170 4 0 3 23 27 52 54 48 46 54 49 72 36 11 -8 35 -14 52 -14z" />
+                    </g>
+                </svg>
+                <div class="w3-bar-item " id="detail">
+                    <span id="text3" contenteditable="true">info@picasso.com</span><br>
+                </div>
+
+                <div class="w3-bar" style="padding-top:10px">
+
+                    <svg class="w3-left" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40px" height="40px" viewBox="0 0 71.000000 71.000000" preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,71.000000) scale(0.100000,-0.100000)" fill="green" stroke="none">
+                            <path d="M265 696 c-107 -34 -186 -103 -233 -204 -34 -73 -36 -179 -7 -262 27 -73 117 -170 187 -200 148 -64 331 -17 424 109 110 149 90 348 -48 476 -89 83 -216 115 -323 81z m232 -57 c192 -92 236 -344 88 -507 -112 -124 -313 -131 -446 -14 -19 17 -48 55 -65 84 -26 48 -29 62 -29 148 0 110 21 166 86 231 100 100 235 121 366 58z" />
+                            <path d="M291 552 c-47 -23 -72 -61 -79 -117 -4 -43 0 -58 47 -149 67 -131 85 -154 107 -141 9 6 43 60 75 120 47 88 59 119 59 156 0 80 -67 149 -145 149 -16 0 -45 -8 -64 -18z m106 -84 c13 -12 23 -30 23 -40 0 -23 -43 -68 -65 -68 -20 0 -65 44 -65 63 0 24 40 67 63 67 11 0 31 -10 44 -22z" />
+                        </g>
+                    </svg>
+                    <div class="w3-bar-item">
+                        <span id="address" contenteditable="true">
+                            <strong>Trucky Construction Sdn. Bhd.</strong><br />
+                            105, Jalan Pulau Tikus 12,<br />
+                            10350 Pulau Tikus, <br />
+                            Pulau Pinang, Malaysia.
+                        </span><br>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-third w3-container w3-hide-small">
+                <div class="w3-bar-block w3-center" id="footernav">
+
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="myDIV">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="target nav-link text-dark active" asp-area="" asp-page="/Index" style="width: 60px;">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="target nav-link text-dark " asp-area="" asp-page="/About" style="width: 60px;">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="target nav-link text-dark " asp-area="" asp-page="/Products" style="width: 80px;">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="target nav-link text-dark " asp-area="" asp-page="/Contact" style="width: 80px;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" w3-padding-16">
+        <h4 id="footertext" contenteditable="true">Carrot Farm & Wholesaler Copyright &copy; 2020. All Right Reserved.</h4>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var page = sessionStorage.getItem('page');
+            var navbar = document.querySelectorAll('li');
+            if (page == null) {
+                $(navbar[0]).addClass('active');
+            } else {
+                navbar.forEach((item, index) => {
+                    if (item.children[0].href == page) {
+                        $(item).addClass('active').siblings().removeClass('active');
+                    }
+                });
+            }
+        })
+
+        $(document).on('click', 'ul li', function () {
+            var x = this.children[0].href;
+            sessionStorage.setItem('page', x);
+        });
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
