@@ -1,0 +1,888 @@
+﻿
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.target:focus {
+    color: white;
+    /*text-decoration: underline;*/
+}
+/*ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    margin: 0;
+    padding: 0;
+    
+}*/
+
+
+
+
+.topnav {
+    overflow: hidden;
+}
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+/*.active, .btn:hover {
+    font-weight: 900;
+    color: white;
+    text-decoration: underline white;
+}*/
+
+.btn {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    color: white;
+}
+
+.dropdown-content a:hover {
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (min-width: 601px) {
+
+
+    ul {
+        top: 50%;
+        margin-left: 70%;
+    }
+
+        ul li {
+            list-style: none;
+        }
+
+            ul li a {
+                position: relative;
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #262626;
+                font-weight: bold;
+            }
+
+            ul li.active a {
+                color: #fff;
+                font-weight: 900;
+                border-bottom: 3px solid white;
+            }
+
+    #contact {
+        padding-top: 90px;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-bottom: 130px;
+    }
+
+    .content {
+        position: absolute;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5);
+        width:100%;
+        height:100%;
+        
+    }
+
+
+    #text1 {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+
+
+
+    #aboutUs {
+        height: 900px;
+        padding-top: 100px;
+    }
+
+    h3 {
+        font-family: system ui, system ui, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+    }
+
+    #strength {
+        padding-top: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: #F2F2F2;
+        height: 650px;
+    }
+
+ /*   #service {
+        padding-top: 30%;
+        height: 1500px;
+    }*/
+
+    h4 {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    #headline {
+        width: 80px;
+        border: 3px solid white;
+    }
+
+    #line {
+        width: 30px;
+        border: 2px solid white;
+    }
+
+    #foot {
+        padding-top: 60px;
+        padding-left: 150px;
+        background-color: #F2F2F2;
+        /*height: 500px;*/
+    }
+
+    #subfooter {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    #detail {
+        padding-top: 8px;
+        padding-right: 20%;
+    }
+
+    #column-2 {
+        width: 50%;
+        padding-top: 80px;
+        height: 600px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    #row-2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #detail-1 {
+        padding-top: 10px;
+    }
+
+    /*#home {
+        background: rgb(0, 0, 0);*/ /* Fallback color */
+        /*background: rgba(0, 0, 0, 0.5);*/ /* Black background with 0.5 opacity */
+        /*color: #f1f1f1;
+    }*/
+
+    #home img {
+        width: 100%;
+    }
+
+    h1 {
+        color: white;
+        font-family: system ui, system ui, sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        /*padding-right: 10%;*/
+        padding-top:40%;
+        /*padding-left:20%;*/
+        width: 600px;
+        text-align:right;
+        
+    }
+
+    #text3 {
+      
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    embed {
+        width: 100%;
+        height: 580px;
+    }
+
+        embed:focus {
+            outline: none;
+            border: none;
+        }
+
+    .item1 {
+        grid-area: main;
+    }
+
+    .item2 {
+        grid-area: footer;
+    }
+
+    .item3 {
+        grid-area: menu;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'header header header header header header' 'main main main menu menu menu' 'footer footer footer menu menu menu';
+        /*grid-gap: 10px;*/
+        background-color: #2196F3;
+    }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+    #target {
+        padding-left: 150px;
+        padding-right: 100px;
+    }
+
+    #line-about {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+    }
+
+    #line-about-1 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 32%;
+    }
+
+    #line-about-2 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 11%;
+    }
+
+    #line-about-3 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 46%;
+    }
+
+    #line-about-4 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 17%;
+    }
+
+    #line-home {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: white;
+        width: 100%;
+        max-width: 6rem;
+    }
+
+    #line-home-1 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: white;
+        width: 100%;
+        max-width: 6rem;
+        /*text-align:right;*/
+        margin-left: 84%;
+    }
+
+    #headline {
+        position: relative;
+        border: none;
+        height: 3px;
+        background: white;
+        width: 100%;
+        max-width: 4rem;
+    }
+
+
+    h5 {
+        font-family: 'Montserrat';
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: left;
+    }
+
+    #targetbox {
+        background-color: #F2F2F2;
+        width: 500px;
+        border-radius: 1rem;
+    }
+
+    #text4 {
+        font-family: system ui, system ui, sans-serif;
+        font-size: 30px;
+        color: #000;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    #address {
+        
+        font-size: 18px;
+    }
+
+    #footertext {
+        font-family: 'Montserrat';
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    #footerbottom-1 {
+        padding-top: 70px;
+    }
+
+    #footerbottom {
+        height: 50px;
+    }
+
+    span {
+        letter-spacing: 2px;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        font-weight: 900;
+    }
+
+    .img-wrap {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .container {
+        padding: 8px 10% !important;
+    }
+
+    .highlight {
+        color: red;
+        font-weight: 800;
+    }
+
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #target-1 {
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    #target-2 {
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    ul {
+        top: 50%;
+    }
+
+        ul li {
+            list-style: none;
+        }
+
+            ul li a {
+                position: relative;
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #262626;
+                font-weight: bold;
+            }
+
+
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    #myNavbar {
+        /* margin-bottom: 20%;*/
+        color: white;
+        border-color: white;
+    }
+
+    #contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #about {
+        /*padding-top: 50px;*/
+        width: 100%;
+    }
+
+    #contact {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+
+    #aboutUs {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #text1 {
+        font-family: 'Montserrat';
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+
+    h3 {
+        font-family: system ui, system ui, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+    }
+
+    h4 {
+        font-family: 'Montserrat';
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    #strength {
+        padding-top: 10px;
+        height: 600px;
+        background-color: #F2F2F2;
+    }
+
+    #service {
+        height: 500px;
+    }
+
+    #service-1 {
+        padding-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #st {
+        width: 100px;
+        height: 100px;
+    }
+
+    hr {
+        width: 80px;
+        border: 2px solid white;
+    }
+
+    #foot {
+        padding-top: 50px;
+        padding-left: 50px;
+        background-color: #F2F2F2;
+        height: 400px;
+    }
+
+    #column-2 {
+        padding-top: 80px;
+        height: 600px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    #row-2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    #detail-1 {
+        padding-top: 6px;
+        font-size: 13px;
+    }
+
+    #detail {
+        padding-top: 3px;
+        font-size: 5px;
+    }
+
+    #home img {
+        height: 350px;
+    }
+
+    h1 {
+        color: white;
+        font-family: system ui, system ui, sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        width: 300px;
+        padding-top: 40%;
+        text-align: right;
+    }
+
+    .content {
+        position: absolute;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #text3 {
+        
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    #address {
+        
+        font-size: 14px;
+    }
+
+    #subfooter {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    embed {
+        width: 100%;
+        height: 470px;
+    }
+
+
+
+        embed:focus {
+            outline: none;
+            border: none;
+        }
+
+    h5 {
+        font-family: 'Montserrat';
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: left;
+    }
+
+    #text4 {
+        font-family: system ui, system ui, sans-serif;
+        font-size: 20px;
+        color: #000;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    #footertext {
+        font-family: 'Montserrat';
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    #footerbottom-1 {
+        padding-top: 30px;
+    }
+
+    #footerbottom {
+        padding-top: 50px;
+    }
+
+    span {
+        letter-spacing: 2px;
+    }
+
+    #line-about {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+    }
+
+    #line-about-1 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 40%;
+    }
+
+    #line-about-2 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 40%;
+    }
+
+    #line-about-3 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 40%;
+    }
+
+    #line-about-4 {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: green;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 10%;
+    }
+
+    #line-home {
+        position: relative;
+        border: none;
+        height: 6px;
+        background: white;
+        width: 100%;
+        max-width: 6rem;
+    }
+
+    #line-home-1 {
+        position: relative;
+        border: none;
+        height: 4px;
+        background: white;
+        width: 100%;
+        max-width: 6rem;
+        margin-left: 68%;
+    }
+
+    #target {
+        padding: 20px;
+    }
+    /*
+    #navtext{
+        font-weight:bold;
+        text-decoration:underline;
+    }*/
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .topnav.responsive .dropdown {
+            float: none;
+        }
+
+        .topnav.responsive .dropdown-content {
+            position: relative;
+        }
+
+        .topnav.responsive .dropdown .dropbtn {
+            display: block;
+            width: 100%;
+            text-align: right;
+        }
+}
+
+
+h2 {
+    font-family: system ui, system ui, sans-serif;
+    font-size: 45px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+
+.container {
+    max-width: 1800px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+label {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+
+#text2 {
+    font-family: system ui, system ui, sans-serif;
+    font-size: 45px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+
+#column-1 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+#row-1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.image:hover {
+    opacity: 0.3;
+}
+
+.icon1 {
+    width: 100px;
+    height: 100px;
+    fill: #000;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+
+.mapouter {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
